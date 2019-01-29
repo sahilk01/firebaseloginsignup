@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/logback"
+    android:layout_height="match_parent"
+    tools:context=".loginreal">
+
+    <ImageView
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:src="@drawable/elgigslogo"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="260dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="25dp"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/username"
+                android:drawablePadding="10dp"
+                android:paddingBottom="8dp"
+                android:fontFamily="@font/work_sans_light"
+                android:hint="Username"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="260dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="25dp"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            app:passwordToggleEnabled="true"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/login_pw"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/lock"
+                android:drawablePadding="10dp"
+                android:paddingBottom="8dp"
+                android:fontFamily="@font/work_sans_light"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:onClick="fpw"
+        android:text="Forgot Password?"
+        android:textColor="@color/buttonColor"
+        android:textSize="14sp" />
+    <android.support.v7.widget.CardView
+        android:layout_width="250dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/work_sans_light"
+            android:text="login"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="250dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="@color/buttonColor"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/signupb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/work_sans_light"
+            android:onClick="signup"
+            android:text="sign up"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_weight="1"
+        android:text="or"
+        android:textSize="18dp"
+        android:gravity="center|bottom"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_weight="1.2"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_gravity="center"
+        android:layout_width="330dp"
+        android:layout_height="0dp">
+
+        <Button
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/gi"
+            android:textSize="12sp"
+            android:text="Login with google"
+            android:onClick="GoogleSignIn"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/phoneto"
+            android:text="login with phone"
+            android:onClick="openpv"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</LinearLayout>

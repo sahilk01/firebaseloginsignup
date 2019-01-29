@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@drawable/logback"
+    android:layout_height="match_parent"
+    tools:context=".signup">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animation_view"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:lottie_fileName="user.json"
+        app:lottie_loop="true"
+        app:lottie_autoPlay="true"/>
+    <TextView
+        android:layout_width="280dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:fontFamily="@font/work_sans_light"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="260dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="25dp"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+
+
+        <EditText
+            android:id="@+id/emailett"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/mail"
+            android:drawablePadding="10dp"
+            android:paddingBottom="8dp"
+            android:fontFamily="@font/work_sans_light"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp" />
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="260dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="25dp"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+
+
+        <EditText
+            android:id="@+id/pw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="10dp"
+            android:paddingBottom="8dp"
+            android:fontFamily="@font/work_sans_light"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/sub"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/work_sans_light"
+            android:text="sign up"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+    </android.support.v7.widget.CardView>
+
+
+    <TextView
+        android:layout_weight="1"
+        android:text="or"
+        android:textSize="18dp"
+        android:gravity="center|bottom"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_weight="1.2"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_gravity="center"
+        android:layout_width="330dp"
+        android:layout_height="0dp">
+
+        <Button
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/gi"
+            android:textSize="12sp"
+            android:text="Login with google"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <Button
+
+            android:id="@+id/signup_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:onClick="openpv"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/phoneto"
+            android:text="login with phone"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

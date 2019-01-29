@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "408640337422",
+    "firebase_url": "https://fir-logintwo-b8a32.firebaseio.com",
+    "project_id": "fir-logintwo-b8a32",
+    "storage_bucket": "fir-logintwo-b8a32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408640337422:android:a01c4b2c8ced43dc",
+        "android_client_info": {
+          "package_name": "com.elgigs.firebaselogintwo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408640337422-2m4pn440ennadkd7k1h4sc909crjr5dj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.elgigs.firebaselogintwo",
+            "certificate_hash": "4086112d849a95eb9c058ac7379ce7840dbdea03"
+          }
+        },
+        {
+          "client_id": "408640337422-9llj0pdaaht1ppd6lspbfco3kbdqt1ne.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8z4mMFc2tX_qKZvWBaA6O9IDM4YR5gcE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408640337422-9llj0pdaaht1ppd6lspbfco3kbdqt1ne.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

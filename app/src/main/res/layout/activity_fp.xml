@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/logback"
+    android:weightSum="10"
+    android:layout_height="match_parent"
+    tools:context=".fp">
+
+    <TextView
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:gravity="center|bottom"
+        android:textSize="20sp"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/work_sans_light"
+        android:text="Enter Email To Change Password"
+        android:layout_width="330dp"
+        android:layout_height="0dp" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="290dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="25dp"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/femail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/mail"
+                android:drawablePadding="10dp"
+                android:paddingBottom="8dp"
+                android:fontFamily="@font/work_sans_light"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="250dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="@color/buttonColor"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/rpbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/work_sans_light"
+            android:text="reset password"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
